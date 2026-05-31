@@ -421,12 +421,12 @@ main .container .right{
     display: flex;
     margin-bottom: 1rem;
 }
-.right .messages .categroy{
+.right .messages .category{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-.right .messages .categroy h6{
+.right .messages .category h6{
     width: 100%;
     align-items: center;
     border-bottom: 4px solid var(--color-light);
@@ -434,10 +434,10 @@ main .container .right{
     font-size: 0.80rem;
 
 }
-.right .messages .categroy .active{
+.right .messages .category .active{
     border-color: var(--color-dark);
 }
-.right .categroy .message-request{
+.right .category .message-request{
     color: var(--color-primary);
 }
 .right .messages .message{
