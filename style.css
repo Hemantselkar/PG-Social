@@ -218,12 +218,10 @@ main .container .left .profile{
     border-bottom-left-radius: var(--card-border-radius);
     overflow: hidden;
 }
-/* .left .btn{       no need
+.left .btn{       
+    /* width: 100%; */
     margin-top: 1rem;
-    width: 100%;
-    align-items: center;
-    padding: 0.1rem;
-} */
+}
 
 /*-------------- NOTIFICATION POPUP -------------------*/
 .left .notification-popup{
