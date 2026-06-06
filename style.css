@@ -165,7 +165,7 @@ main .container .left .profile{
     align-items: center;
     height: 4rem;
     cursor: pointer;
-    transition: all 0.3s ease; /*chatgbt*/
+    transition: all 0.3s ease; 
     position: relative;
 }
 .left .sidebar .menu-item:hover{
@@ -624,6 +624,187 @@ main .container .right{
     border: 2px solid var(--color-primary);
     border-radius: 50%;
     margin: 1rem;
+}
+
+/* ================= ABOUT NAV ================= */
+
+.about-nav {
+    background: var(--color-white);
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 0 1rem var(--color-light);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: var(--color-Dark);
+    padding: 0.5rem 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.theme-btn,
+.home-btn {
+    border: none;
+    outline: none;
+
+    background: var(--color-primary);
+    color: var(--color-white);
+
+    padding: 0.8rem 1.2rem;
+    border-radius: 2rem;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.theme-btn:hover,
+.home-btn:hover {
+    background: var(--color-primary);
+    color: rgb(8, 8, 8);
+}
+
+/* ================= ABOUT ================= */
+
+.about-container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 2rem auto;
+}
+
+.about-card {
+    background: var(--color-white);
+
+    border-radius: var(--card-border-radius);
+    padding: 2rem;
+
+    box-shadow: 0 0 1rem var(--color-light);
+}
+
+.about-card h1 {
+    text-align: center;
+    color: var(--color-primary);
+
+    margin-bottom: 1.5rem;
+}
+
+.about-card p {
+    line-height: 2;
+    color: var(--color-dark);
+
+    text-align: justify;
+
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ================= FEATURES ================= */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    background: var(--color-light);
+
+    border-radius: 1rem;
+    padding: 2rem;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.feature:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .about-nav {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .theme-btn,
+    .home-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .about-card {
+        padding: 1rem;
+    }
+
+    .about-card p {
+        padding: 0;
+        text-align: left;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* THEME MODAL FIX */
+
+.customize-theme {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+    place-items: center;
+
+    z-index: 999;
+}
+
+.customize-theme .card {
+    background: var(--color-white);
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    width: 50%;
+}
+
+
+
+@media(max-width:768px){
+
+    .customize-theme .card{
+        width: 90%;
+    }
 }
 
 
